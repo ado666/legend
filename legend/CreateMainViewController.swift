@@ -69,19 +69,19 @@ class CreateMainViewController: UIViewController, UIImagePickerControllerDelegat
 
         if title == "" || description == "" {return}
 
-        NETWORKER.sharedInstance.postAJAX(url: "/achievements", data: params, callback: {(error, data) in
-            if error == nil {
-
-                DispatchQueue.main.async {
-                    self.nameInput.text = ""
-                    self.descriptionInput.text = ""
-                    self.imageInput.image = UIImage(named: "image/image-placeholder.jpg")
-                }
-                self.imagePicked = false
-                AchievementFactory.sharedInstance.fetch()
-                self.dismissKeyboard()
-            }
-        })
+//        NETWORKER.sharedInstance.postAJAX(url: "/achievements", data: params, callback: {(error, data) in
+//            if error == nil {
+//
+//                DispatchQueue.main.async {
+//                    self.nameInput.text = ""
+//                    self.descriptionInput.text = ""
+//                    self.imageInput.image = UIImage(named: "image/image-placeholder.jpg")
+//                }
+//                self.imagePicked = false
+//                AchievementFactory.sharedInstance.fetch()
+//                self.dismissKeyboard()
+//            }
+//        })
     }
 
     override func viewDidDisappear(_ animated: Bool) {

@@ -25,18 +25,18 @@ class LoginLoginController: UIViewController, LoginButtonDelegate {
 
     func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
         if let token = AccessToken.current {
-            NETWORKER.sharedInstance.postAJAX(url: "/auth/tokens", data: ["facebook_access_token": token.authenticationToken], callback: {(error, data) in
-                if error == nil {
-                    guard let accessToken = data["access_token"] as? String else {
-                        return
-                    }
-                    Local.sharedInstance.setStringValue(key: "accessToken", value: accessToken)
-                    self.saveDevice()
-
-                }else {
-                    debugPrint("error", error?.localizedDescription ?? "")
-                }
-            })
+//            NETWORKER.sharedInstance.postAJAX(url: "/auth/tokens", data: ["facebook_access_token": token.authenticationToken], callback: {(error, data) in
+//                if error == nil {
+//                    guard let accessToken = data["access_token"] as? String else {
+//                        return
+//                    }
+//                    Local.sharedInstance.setStringValue(key: "accessToken", value: accessToken)
+//                    self.saveDevice()
+//
+//                }else {
+//                    debugPrint("error", error?.localizedDescription ?? "")
+//                }
+//            })
         }
     }
 
@@ -65,23 +65,23 @@ class LoginLoginController: UIViewController, LoginButtonDelegate {
         }
 
 
-        NETWORKER.sharedInstance.postAJAX(url: "/users/self/devices", data: params, callback: {(error, data) in
-            if error == nil {
-                guard let id = data["id"] as? String else {
-                    return
-                }
-                debugPrint(data)
-                Local.sharedInstance.setStringValue(key: "deviceId", value: id)
-                AchievementFactory.sharedInstance.fetch()
-                UserFactory.sharedInstance.fetch()
-                DispatchQueue.main.async {
-                    self.parent?.performSegue(withIdentifier: "main_segue", sender: self)
-                }
-
-            }else {
-                debugPrint("error", error?.localizedDescription ?? "")
-            }
-        })
+//        NETWORKER.sharedInstance.postAJAX(url: "/users/self/devices", data: params, callback: {(error, data) in
+//            if error == nil {
+//                guard let id = data["id"] as? String else {
+//                    return
+//                }
+//                debugPrint("+++", data)
+//                Local.sharedInstance.setStringValue(key: "deviceId", value: id)
+//                AchievementFactory.sharedInstance.fetch()
+//                UserFactory.sharedInstance.fetch()
+//                DispatchQueue.main.async {
+//                    self.parent?.performSegue(withIdentifier: "main_segue", sender: self)
+//                }
+//
+//            }else {
+//                debugPrint("error", error?.localizedDescription ?? "")
+//            }
+//        })
     }
 
 

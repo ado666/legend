@@ -19,7 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        registerForPushNotifications()
+//        registerForPushNotifications()
+        
+        NETWORKER.sharedInstance.get(url: "http://api.lgnd.im/v1.0/users/self/devices?access_token=61d99640f0f4c11cf384c2c933977ad27e1ca618", parameters: nil, completion: nil)
         return true
     }
 

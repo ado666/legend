@@ -72,9 +72,9 @@ class ListMainViewController: UIViewController, UICollectionViewDelegate, UIColl
         return AchievementFactory.sharedInstance.collection.count
     }
     @IBAction func doDisconnect(_ sender: Any) {
-        NETWORKER.sharedInstance.deleteAjax(url: "/users/self/devices/" + Local.sharedInstance.getStringValue(key: "deviceId"), data: [String: String](), callback: {(error, data) in
-
-        })
+//        NETWORKER.sharedInstance.deleteAjax(url: "/users/self/devices/" + Local.sharedInstance.getStringValue(key: "deviceId"), data: [String: String](), callback: {(error, data) in
+//
+//        })
     }
 
 

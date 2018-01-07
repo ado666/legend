@@ -21,20 +21,20 @@ class RootLoginController: UIViewController {
     }
 
     func tryLogin () {
-        _ = NETWORKER.sharedInstance.postAJAX(url: "/auth/tokens", data: ["device_id": Local.sharedInstance.getStringValue(key: "deviceId")], callback: {(error, data) in
-
-            guard let accessToken = data["access_token"] as? String else {
-                return self.tryRegister()
-            };
-            Local.sharedInstance.setStringValue(key: "accessToken", value: accessToken)
-
-            AchievementFactory.sharedInstance.fetch()
-            UserFactory.sharedInstance.fetch()
-            DispatchQueue.main.async {
-                self.parent?.performSegue(withIdentifier: "main_segue", sender: self)
-            }
-
-        })
+//        _ = NETWORKER.sharedInstance.postAJAX(url: "/auth/tokens", data: ["device_id": Local.sharedInstance.getStringValue(key: "deviceId")], callback: {(error, data) in
+//
+//            guard let accessToken = data["access_token"] as? String else {
+//                return self.tryRegister()
+//            };
+//            Local.sharedInstance.setStringValue(key: "accessToken", value: accessToken)
+//
+//            AchievementFactory.sharedInstance.fetch()
+//            UserFactory.sharedInstance.fetch()
+//            DispatchQueue.main.async {
+//                self.parent?.performSegue(withIdentifier: "main_segue", sender: self)
+//            }
+//
+//        })
     }
 
     func tryRegister () {
