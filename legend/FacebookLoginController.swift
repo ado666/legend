@@ -11,7 +11,7 @@ import FacebookCore
 import FacebookLogin
 
 
-class LoginLoginController: UIViewController, LoginButtonDelegate {
+class FacebookLoginController: UIViewController, LoginButtonDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +20,12 @@ class LoginLoginController: UIViewController, LoginButtonDelegate {
         myLoginButton.center = view.center;
         myLoginButton.delegate = self
         view.addSubview(myLoginButton)
-
     }
 
     func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
         if let token = AccessToken.current {
+            Local.sharedInstance.facebookAC = token.authenticationToken
+            API.sharedInstance.authenticate()
 //            NETWORKER.sharedInstance.postAJAX(url: "/auth/tokens", data: ["facebook_access_token": token.authenticationToken], callback: {(error, data) in
 //                if error == nil {
 //                    guard let accessToken = data["access_token"] as? String else {

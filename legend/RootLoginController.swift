@@ -9,18 +9,24 @@
 import UIKit
 
 class RootLoginController: UIViewController {
+    
+    var authenticated: Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.authenticate()
+    }
+    
+    func authenticate () {
         if Local.sharedInstance.getStringValue(key: "deviceId") != nil {
-            self.tryLogin()
+            self.login()
         }else {
-            self.tryRegister()
+            self.register()
         }
     }
 
-    func tryLogin () {
+    func login () {
 //        _ = NETWORKER.sharedInstance.postAJAX(url: "/auth/tokens", data: ["device_id": Local.sharedInstance.getStringValue(key: "deviceId")], callback: {(error, data) in
 //
 //            guard let accessToken = data["access_token"] as? String else {
@@ -37,7 +43,7 @@ class RootLoginController: UIViewController {
 //        })
     }
 
-    func tryRegister () {
+    func register () {
         DispatchQueue.main.async {
             self.performSegue(withIdentifier: "register_segue", sender: self)
         }

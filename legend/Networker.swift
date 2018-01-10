@@ -15,28 +15,81 @@ class NETWORKER: NSObject {
     static let sharedInstance = NETWORKER()
     override private init() {}
     
-    func get(url: String, parameters: [String: Any]?, completion: (([String: Any]?) -> Void)!) -> Void {
+    typealias _getHandler = ([String: Any?]?, Int?, String?)  -> Void
+    func get(url: String, parameters: [String: Any]?, completion: _getHandler?) {
+        var autorizedURL = ""
+        if Local.sharedInstance.accessToken != nil {
+            autorizedURL = String(format: "%@?access_token=%@", url, Local.sharedInstance.accessToken)
+        }else{
+            autorizedURL = String(format: "%@", url)
+        }
         Alamofire.request(
-            url,
+            autorizedURL,
             method: .get,
             parameters: parameters,
             encoding: JSONEncoding.default,
             headers: [:])
-        .validate()
-        .responseJSON { (response) -> Void in
-            guard response.result.isSuccess else {
-                print("Error while get request: \(response.result.error ?? "error" as! Error)")
-                if (completion != nil) { completion(nil) }
-                return
-            }
-            
-            guard let data = response.result.value as? [[String: Any]] else {
-                print("returned bad data")
-                if (completion != nil) { completion(nil) }
-                return
-            }
-            
-            if (completion != nil) { completion(data[0]) }
+            .validate()
+            .responseJSON { (response) -> Void in
+                print(String(format: "- End request to url: %@ with code: %d", autorizedURL, (response.response?.statusCode)!))
+                guard response.result.isSuccess else {
+                    print(String(format: "-- error while get request with error %d", (response.response?.statusCode)!))
+                    guard let handler = completion else {
+                        return
+                    }
+                    return handler(nil, response.response?.statusCode, nil)
+                }
+                
+                guard let data = response.result.value as? [String: Any] else {
+                    print(String(format: "-- error while parsing data. data: %@", response.result.value as! CVarArg))
+                    guard let handler = completion else {
+                        return
+                    }
+                    return handler(nil, response.response?.statusCode, nil)
+                }
+                guard let handler = completion else {
+                    return
+                }
+                handler(data, response.response?.statusCode, nil)
+        }
+    }
+    
+    typealias _postHandler = ([String: Any?]?, Int?, String?)  -> Void
+    func post(url: String, parameters: [String: Any]?, completion: _postHandler?) {
+        var autorizedURL = ""
+        if Local.sharedInstance.accessToken != nil {
+            autorizedURL = String(format: "%@?access_token=%@", url, Local.sharedInstance.accessToken)
+        }else{
+            autorizedURL = String(format: "%@", url)
+        }
+        Alamofire.request(
+            autorizedURL,
+            method: .post,
+            parameters: parameters,
+            encoding: JSONEncoding.default,
+            headers: [:])
+            .validate()
+            .responseJSON { (response) -> Void in
+                print(String(format: "- End request to url: %@ with code: %d", autorizedURL, (response.response?.statusCode)!))
+                guard response.result.isSuccess else {
+                    print(String(format: "-- error while get request with error %d", (response.response?.statusCode)!))
+                    guard let handler = completion else {
+                        return
+                    }
+                    return handler(nil, response.response?.statusCode, nil)
+                }
+                
+                guard let data = response.result.value as? [String: Any] else {
+                    print(String(format: "-- error while parsing data. data: %@", response.result.value as! CVarArg))
+                    guard let handler = completion else {
+                        return
+                    }
+                    return handler(nil, response.response?.statusCode, nil)
+                }
+                guard let handler = completion else {
+                    return
+                }
+                handler(data, response.response?.statusCode, nil)
         }
     }
 }

@@ -10,10 +10,27 @@ import UIKit
 
 class Local: NSObject {
     static let sharedInstance = Local()
+    
+    var deviceId: String! {
+        get             {return self.getStringValue(key: "deviceId")}
+        set(newVal)     {self.setStringValue(key: "deviceId", value: newVal)}
+    }
+    var facebookAC : String! {
+        get             {return self.getStringValue(key: "facebookAC")}
+        set(newVal)     {self.setStringValue(key: "facebookAC", value: newVal)}
+    }
+    var pushToken: String! {
+        get             {return self.getStringValue(key: "pushToken")}
+        set(newVal)     {self.setStringValue(key: "pushToken", value: newVal)}
+    }
+    var accessToken: String! {
+        get             {return self.getStringValue(key: "accessToken")}
+        set(newVal)     {self.setStringValue(key: "accessToken", value: newVal)}
+    }
 
     override private init () {}
 
-    func setStringValue (key: String, value: String) -> Void {
+    func setStringValue (key: String, value: String!) -> Void {
         let userDefaults = UserDefaults.standard
         userDefaults.setValue(value, forKey: key)
     }

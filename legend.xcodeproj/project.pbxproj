@@ -16,12 +16,13 @@
 		6A34FAD31F48A64F00253D48 /* ListMainCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A34FAD21F48A64F00253D48 /* ListMainCellView.swift */; };
 		6A34FAD61F48A72600253D48 /* AchievementMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A34FAD51F48A72600253D48 /* AchievementMainView.swift */; };
 		6A5195CB1F30E5A300104F54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5195CA1F30E5A300104F54 /* AppDelegate.swift */; };
-		6A5195CD1F30E5A300104F54 /* LoginLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5195CC1F30E5A300104F54 /* LoginLoginController.swift */; };
+		6A5195CD1F30E5A300104F54 /* FacebookLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5195CC1F30E5A300104F54 /* FacebookLoginController.swift */; };
 		6A5195D01F30E5A300104F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5195CE1F30E5A300104F54 /* Main.storyboard */; };
 		6A5195D21F30E5A300104F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5195D11F30E5A300104F54 /* Assets.xcassets */; };
 		6A5195D51F30E5A300104F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5195D31F30E5A300104F54 /* LaunchScreen.storyboard */; };
 		6A5195F51F30FB8500104F54 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5195F41F30FB8500104F54 /* Networker.swift */; };
 		6A79C228200259110073DC16 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79C227200259110073DC16 /* API.swift */; };
+		6A79C22E200636350073DC16 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79C22D200636350073DC16 /* Error.swift */; };
 		6ACBCB051F4C776300E6D0EC /* ListUsersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACBCB041F4C776300E6D0EC /* ListUsersController.swift */; };
 		6ACBCB071F4C779000E6D0EC /* UserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACBCB061F4C779000E6D0EC /* UserFactory.swift */; };
 		6ACBCB091F4C7AA600E6D0EC /* ListUserCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACBCB081F4C7AA600E6D0EC /* ListUserCellView.swift */; };
@@ -44,13 +45,14 @@
 		6A34FAD51F48A72600253D48 /* AchievementMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementMainView.swift; sourceTree = "<group>"; };
 		6A5195C71F30E5A300104F54 /* legend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = legend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A5195CA1F30E5A300104F54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6A5195CC1F30E5A300104F54 /* LoginLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLoginController.swift; sourceTree = "<group>"; };
+		6A5195CC1F30E5A300104F54 /* FacebookLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginController.swift; sourceTree = "<group>"; };
 		6A5195CF1F30E5A300104F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A5195D11F30E5A300104F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A5195D41F30E5A300104F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A5195D61F30E5A300104F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A5195F41F30FB8500104F54 /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		6A79C227200259110073DC16 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		6A79C22D200636350073DC16 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		6ACBCB041F4C776300E6D0EC /* ListUsersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUsersController.swift; sourceTree = "<group>"; };
 		6ACBCB061F4C779000E6D0EC /* UserFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFactory.swift; sourceTree = "<group>"; };
 		6ACBCB081F4C7AA600E6D0EC /* ListUserCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserCellView.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				6A2B53521F4B3016004A9CFB /* ImageLoader.swift */,
 				6A5195F41F30FB8500104F54 /* Networker.swift */,
 				6A79C227200259110073DC16 /* API.swift */,
+				6A79C22D200636350073DC16 /* Error.swift */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -209,7 +212,7 @@
 		6ADF7B3B1F3785E400CF6256 /* login */ = {
 			isa = PBXGroup;
 			children = (
-				6A5195CC1F30E5A300104F54 /* LoginLoginController.swift */,
+				6A5195CC1F30E5A300104F54 /* FacebookLoginController.swift */,
 				6ADF7B3C1F37860700CF6256 /* RootLoginController.swift */,
 			);
 			name = login;
@@ -377,7 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A5195CD1F30E5A300104F54 /* LoginLoginController.swift in Sources */,
+				6A5195CD1F30E5A300104F54 /* FacebookLoginController.swift in Sources */,
 				6A79C228200259110073DC16 /* API.swift in Sources */,
 				6A34FAD61F48A72600253D48 /* AchievementMainView.swift in Sources */,
 				6A34FACB1F488ECD00253D48 /* CreateMainViewController.swift in Sources */,
@@ -385,6 +388,7 @@
 				6ACBCB051F4C776300E6D0EC /* ListUsersController.swift in Sources */,
 				6ADF7B3A1F3785B500CF6256 /* Navigator.swift in Sources */,
 				6A34FACE1F4893FE00253D48 /* ListMainViewController.swift in Sources */,
+				6A79C22E200636350073DC16 /* Error.swift in Sources */,
 				6ACBCB091F4C7AA600E6D0EC /* ListUserCellView.swift in Sources */,
 				6ADF7B3D1F37860700CF6256 /* RootLoginController.swift in Sources */,
 				6AD3B6F51F48653B00B0338A /* Local.swift in Sources */,

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sFD-dJ-nnM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sFD-dJ-nnM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,59 +22,18 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="gQC-RX-FZ4" kind="relationship" relationship="rootViewController" id="uDL-tM-fib"/>
                         <segue destination="NZG-je-4sy" kind="show" identifier="main_segue" id="nGB-kt-inF"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="facebook_login_segue" id="7hT-EF-8eR"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Rx-OP-aJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="209" y="-616"/>
         </scene>
-        <!--Root Login Controller-->
-        <scene sceneID="S8x-wI-Cpu">
-            <objects>
-                <viewController id="gQC-RX-FZ4" customClass="RootLoginController" customModule="legend" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="XjI-lO-ksm"/>
-                        <viewControllerLayoutGuide type="bottom" id="Vh1-gd-lAg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5QU-IX-I5L">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="5l9-P8-lHe"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="register_segue" id="9x7-QM-9lM"/>
-                        <segue destination="c8L-3a-3Ei" kind="show" identifier="login_segue" id="S1j-eC-kgu"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="es2-J8-HzG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="209" y="154"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="wnb-se-dbB">
-            <objects>
-                <viewController id="c8L-3a-3Ei" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Mf1-6P-IQz"/>
-                        <viewControllerLayoutGuide type="bottom" id="pbI-d0-TM6"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WBH-20-fWG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="caU-cW-G4C" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="209" y="887"/>
-        </scene>
-        <!--Login Login Controller-->
+        <!--Facebook Login Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginLoginController" customModule="legend" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="FacebookLoginController" customModule="legend" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -87,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="247"/>
+            <point key="canvasLocation" x="209" y="107"/>
         </scene>
         <!--List Users Controller-->
         <scene sceneID="pJD-TR-Aek">
