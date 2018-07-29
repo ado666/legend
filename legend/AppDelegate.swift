@@ -20,11 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     //MARK: - Application
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        self.navigator = application.windows[0].rootViewController as! Navigator
+        Local.sharedInstance.accessToken = nil
+        debugPrint(application.windows[0])
+//        self.navigator = application.windows[0].rootViewController as! Navigator
         
         Local.sharedInstance.facebookAC = nil
         
-        self.registerForPushNotifications()
+//        self.registerForPushNotifications()
         API.sharedInstance.authenticate()
         
         return true

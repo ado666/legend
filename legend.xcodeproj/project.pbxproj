@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A26CA032023431B0010E903 /* AchievementsGridController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26CA022023431B0010E903 /* AchievementsGridController.swift */; };
+		6A26CA0520234AA40010E903 /* AchievementsCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A26CA0420234AA40010E903 /* AchievementsCellView.swift */; };
 		6A2B53511F4B1778004A9CFB /* image in Resources */ = {isa = PBXBuildFile; fileRef = 6A2B53501F4B1778004A9CFB /* image */; };
 		6A2B53531F4B3016004A9CFB /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2B53521F4B3016004A9CFB /* ImageLoader.swift */; };
 		6A34FAC81F488BC700253D48 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A34FAC71F488BC700253D48 /* MainController.swift */; };
@@ -21,20 +23,29 @@
 		6A5195D21F30E5A300104F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5195D11F30E5A300104F54 /* Assets.xcassets */; };
 		6A5195D51F30E5A300104F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5195D31F30E5A300104F54 /* LaunchScreen.storyboard */; };
 		6A5195F51F30FB8500104F54 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5195F41F30FB8500104F54 /* Networker.swift */; };
+		6A738329201FA956004B1083 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A738328201FA956004B1083 /* TabController.swift */; };
 		6A79C228200259110073DC16 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79C227200259110073DC16 /* API.swift */; };
 		6A79C22E200636350073DC16 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79C22D200636350073DC16 /* Error.swift */; };
+		6A904408201E4F2C009AFD95 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A904406201E4F2C009AFD95 /* SWRevealViewController.m */; };
+		6A90440C201E5A6F009AFD95 /* SWControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A90440B201E5A6F009AFD95 /* SWControll.swift */; };
 		6ACBCB051F4C776300E6D0EC /* ListUsersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACBCB041F4C776300E6D0EC /* ListUsersController.swift */; };
 		6ACBCB071F4C779000E6D0EC /* UserFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACBCB061F4C779000E6D0EC /* UserFactory.swift */; };
 		6ACBCB091F4C7AA600E6D0EC /* ListUserCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACBCB081F4C7AA600E6D0EC /* ListUserCellView.swift */; };
 		6ACBCB0C1F4C825200E6D0EC /* UserMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACBCB0B1F4C825200E6D0EC /* UserMainView.swift */; };
 		6ACBCB0E1F4C8ADC00E6D0EC /* AchievementGrantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACBCB0D1F4C8ADC00E6D0EC /* AchievementGrantView.swift */; };
+		6AD21FEE20299B9B0015CD7B /* CreateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD21FED20299B9B0015CD7B /* CreateController.swift */; };
+		6AD21FF020299C3B0015CD7B /* IconFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD21FEF20299C3B0015CD7B /* IconFactory.swift */; };
+		6AD21FF22029A56B0015CD7B /* SelectIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD21FF12029A56B0015CD7B /* SelectIconCell.swift */; };
 		6AD3B6F51F48653B00B0338A /* Local.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD3B6F41F48653B00B0338A /* Local.swift */; };
+		6ADE7CF6202337C000C3E248 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADE7CF5202337C000C3E248 /* MainViewController.swift */; };
 		6ADF7B3A1F3785B500CF6256 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF7B391F3785B500CF6256 /* Navigator.swift */; };
 		6ADF7B3D1F37860700CF6256 /* RootLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF7B3C1F37860700CF6256 /* RootLoginController.swift */; };
 		E2930044C2C0A7FF51C6ADA6 /* Pods_legend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A04E799B070FCF0CA28C6BE0 /* Pods_legend.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A26CA022023431B0010E903 /* AchievementsGridController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsGridController.swift; sourceTree = "<group>"; };
+		6A26CA0420234AA40010E903 /* AchievementsCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsCellView.swift; sourceTree = "<group>"; };
 		6A2B53501F4B1778004A9CFB /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
 		6A2B53521F4B3016004A9CFB /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		6A34FAC71F488BC700253D48 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -51,14 +62,23 @@
 		6A5195D41F30E5A300104F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A5195D61F30E5A300104F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A5195F41F30FB8500104F54 /* Networker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		6A738328201FA956004B1083 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		6A79C227200259110073DC16 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		6A79C22D200636350073DC16 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		6A904405201E4F2B009AFD95 /* legend-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "legend-Bridging-Header.h"; sourceTree = "<group>"; };
+		6A904406201E4F2C009AFD95 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		6A904407201E4F2C009AFD95 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		6A90440B201E5A6F009AFD95 /* SWControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWControll.swift; sourceTree = "<group>"; };
 		6ACBCB041F4C776300E6D0EC /* ListUsersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUsersController.swift; sourceTree = "<group>"; };
 		6ACBCB061F4C779000E6D0EC /* UserFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFactory.swift; sourceTree = "<group>"; };
 		6ACBCB081F4C7AA600E6D0EC /* ListUserCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListUserCellView.swift; sourceTree = "<group>"; };
 		6ACBCB0B1F4C825200E6D0EC /* UserMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMainView.swift; sourceTree = "<group>"; };
 		6ACBCB0D1F4C8ADC00E6D0EC /* AchievementGrantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementGrantView.swift; sourceTree = "<group>"; };
+		6AD21FED20299B9B0015CD7B /* CreateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateController.swift; sourceTree = "<group>"; };
+		6AD21FEF20299C3B0015CD7B /* IconFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconFactory.swift; sourceTree = "<group>"; };
+		6AD21FF12029A56B0015CD7B /* SelectIconCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectIconCell.swift; sourceTree = "<group>"; };
 		6AD3B6F41F48653B00B0338A /* Local.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Local.swift; sourceTree = "<group>"; };
+		6ADE7CF5202337C000C3E248 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		6ADF7B391F3785B500CF6256 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		6ADF7B3C1F37860700CF6256 /* RootLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootLoginController.swift; sourceTree = "<group>"; };
 		6ADFBF9E1F3CBC460047478F /* legend.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = legend.entitlements; sourceTree = "<group>"; };
@@ -86,6 +106,7 @@
 				6A34FACC1F4893E200253D48 /* listTab */,
 				6A34FAC91F488EA000253D48 /* createTab */,
 				6A34FAC71F488BC700253D48 /* MainController.swift */,
+				6A738328201FA956004B1083 /* TabController.swift */,
 			);
 			name = tab;
 			sourceTree = "<group>";
@@ -112,6 +133,7 @@
 			children = (
 				6A34FAD01F4895E100253D48 /* AchievementFactory.swift */,
 				6ACBCB061F4C779000E6D0EC /* UserFactory.swift */,
+				6AD21FEF20299C3B0015CD7B /* IconFactory.swift */,
 			);
 			name = entities;
 			sourceTree = "<group>";
@@ -147,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				6A2B53501F4B1778004A9CFB /* image */,
+				6AD21FEC20299B810015CD7B /* achievement */,
+				6ADE7CF4202337A700C3E248 /* sideMenu */,
 				6ACBCB0A1F4C822F00E6D0EC /* user */,
 				6A34FAD41F48A70700253D48 /* achievement */,
 				6A34FACF1F4895C200253D48 /* entities */,
@@ -156,6 +180,7 @@
 				6ADF7B3B1F3785E400CF6256 /* login */,
 				6ADFBF9E1F3CBC460047478F /* legend.entitlements */,
 				6A5195CA1F30E5A300104F54 /* AppDelegate.swift */,
+				6A90440B201E5A6F009AFD95 /* SWControll.swift */,
 				6ADF7B391F3785B500CF6256 /* Navigator.swift */,
 				6A5195CE1F30E5A300104F54 /* Main.storyboard */,
 				6A5195D11F30E5A300104F54 /* Assets.xcassets */,
@@ -176,10 +201,13 @@
 		6A5195F31F30FB5D00104F54 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				6A904407201E4F2C009AFD95 /* SWRevealViewController.h */,
+				6A904406201E4F2C009AFD95 /* SWRevealViewController.m */,
 				6A2B53521F4B3016004A9CFB /* ImageLoader.swift */,
 				6A5195F41F30FB8500104F54 /* Networker.swift */,
 				6A79C227200259110073DC16 /* API.swift */,
 				6A79C22D200636350073DC16 /* Error.swift */,
+				6A904405201E4F2B009AFD95 /* legend-Bridging-Header.h */,
 			);
 			name = lib;
 			sourceTree = "<group>";
@@ -201,12 +229,31 @@
 			name = user;
 			sourceTree = "<group>";
 		};
+		6AD21FEC20299B810015CD7B /* achievement */ = {
+			isa = PBXGroup;
+			children = (
+				6AD21FED20299B9B0015CD7B /* CreateController.swift */,
+				6AD21FF12029A56B0015CD7B /* SelectIconCell.swift */,
+			);
+			name = achievement;
+			sourceTree = "<group>";
+		};
 		6AD3B6F31F48651100B0338A /* settings */ = {
 			isa = PBXGroup;
 			children = (
 				6AD3B6F41F48653B00B0338A /* Local.swift */,
 			);
 			name = settings;
+			sourceTree = "<group>";
+		};
+		6ADE7CF4202337A700C3E248 /* sideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				6ADE7CF5202337C000C3E248 /* MainViewController.swift */,
+				6A26CA022023431B0010E903 /* AchievementsGridController.swift */,
+				6A26CA0420234AA40010E903 /* AchievementsCellView.swift */,
+			);
+			name = sideMenu;
 			sourceTree = "<group>";
 		};
 		6ADF7B3B1F3785E400CF6256 /* login */ = {
@@ -263,6 +310,7 @@
 					6A5195C61F30E5A300104F54 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = Z5DPE5M3XD;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -335,23 +383,27 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-legend/Pods-legend-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/SVGKit/SVGKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVGKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -381,24 +433,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A5195CD1F30E5A300104F54 /* FacebookLoginController.swift in Sources */,
+				6AD21FF020299C3B0015CD7B /* IconFactory.swift in Sources */,
 				6A79C228200259110073DC16 /* API.swift in Sources */,
 				6A34FAD61F48A72600253D48 /* AchievementMainView.swift in Sources */,
 				6A34FACB1F488ECD00253D48 /* CreateMainViewController.swift in Sources */,
+				6A26CA032023431B0010E903 /* AchievementsGridController.swift in Sources */,
 				6A34FAC81F488BC700253D48 /* MainController.swift in Sources */,
 				6ACBCB051F4C776300E6D0EC /* ListUsersController.swift in Sources */,
+				6AD21FEE20299B9B0015CD7B /* CreateController.swift in Sources */,
 				6ADF7B3A1F3785B500CF6256 /* Navigator.swift in Sources */,
 				6A34FACE1F4893FE00253D48 /* ListMainViewController.swift in Sources */,
 				6A79C22E200636350073DC16 /* Error.swift in Sources */,
 				6ACBCB091F4C7AA600E6D0EC /* ListUserCellView.swift in Sources */,
 				6ADF7B3D1F37860700CF6256 /* RootLoginController.swift in Sources */,
+				6A738329201FA956004B1083 /* TabController.swift in Sources */,
 				6AD3B6F51F48653B00B0338A /* Local.swift in Sources */,
 				6A5195CB1F30E5A300104F54 /* AppDelegate.swift in Sources */,
 				6A34FAD31F48A64F00253D48 /* ListMainCellView.swift in Sources */,
+				6ADE7CF6202337C000C3E248 /* MainViewController.swift in Sources */,
+				6A90440C201E5A6F009AFD95 /* SWControll.swift in Sources */,
+				6A904408201E4F2C009AFD95 /* SWRevealViewController.m in Sources */,
+				6AD21FF22029A56B0015CD7B /* SelectIconCell.swift in Sources */,
 				6A5195F51F30FB8500104F54 /* Networker.swift in Sources */,
 				6A34FAD11F4895E100253D48 /* AchievementFactory.swift in Sources */,
 				6ACBCB071F4C779000E6D0EC /* UserFactory.swift in Sources */,
 				6A2B53531F4B3016004A9CFB /* ImageLoader.swift in Sources */,
 				6ACBCB0C1F4C825200E6D0EC /* UserMainView.swift in Sources */,
+				6A26CA0520234AA40010E903 /* AchievementsCellView.swift in Sources */,
 				6ACBCB0E1F4C8ADC00E6D0EC /* AchievementGrantView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,6 +586,7 @@
 			baseConfigurationReference = D5E43E9C92171E87A4523761 /* Pods-legend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = legend/legend.entitlements;
 				DEVELOPMENT_TEAM = Z5DPE5M3XD;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -536,6 +598,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = im.legend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "legend/legend-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -545,6 +609,7 @@
 			baseConfigurationReference = 96C771D022F73D61C610948C /* Pods-legend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = legend/legend.entitlements;
 				DEVELOPMENT_TEAM = Z5DPE5M3XD;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -556,6 +621,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = im.legend;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "legend/legend-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

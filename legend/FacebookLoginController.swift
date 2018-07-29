@@ -25,7 +25,8 @@ class FacebookLoginController: UIViewController, LoginButtonDelegate {
     func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
         if let token = AccessToken.current {
             Local.sharedInstance.facebookAC = token.authenticationToken
-            API.sharedInstance.authenticate()
+            self.dismiss(animated: false, completion: nil)
+            API.sharedInstance.apiRegister()
 //            NETWORKER.sharedInstance.postAJAX(url: "/auth/tokens", data: ["facebook_access_token": token.authenticationToken], callback: {(error, data) in
 //                if error == nil {
 //                    guard let accessToken = data["access_token"] as? String else {

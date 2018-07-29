@@ -32,11 +32,11 @@ class UserMainView: UIViewController {
             self.phone.text = ""
             self.email.text = ""
 
-            self.username.text = self.selected.username
-            self.firstName.text = self.selected.firstName
-            self.lastName.text = self.selected.lastName
-            self.phone.text = self.selected.phone
-            self.email.text = self.selected.email
+//            self.username.text = self.selected.username
+//            self.firstName.text = self.selected.firstName
+//            self.lastName.text = self.selected.lastName
+//            self.phone.text = self.selected.phone
+//            self.email.text = self.selected.email
         }
     }
 

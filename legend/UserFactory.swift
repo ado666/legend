@@ -12,8 +12,13 @@ class UserFactory: NSObject {
     static let sharedInstance = UserFactory()
 
     var collection = [UserStruct]()
+    var SELF : UserStruct!
 
     override private init() {}
+    
+    func selfInit (data: [[String: Any]]) {
+        self.SELF = UserStruct(with: data[0])
+    }
 
     func fetch () {
 //        _ = NETWORKER.sharedInstance.getAJAX(url: "/users", data: [String: String](), callback: {(error, data) in
@@ -48,10 +53,17 @@ class UserFactory: NSObject {
 }
 
 struct UserStruct {
-    var id: Int
-    var username: String
+    init(with dictionary: [String: Any]?) {
+        guard let dictionary = dictionary else { return }
+        id = dictionary["id"] as? Int
+        username = dictionary["username"] as? String
+        firstName = dictionary["first_name"] as? String
+        lastName = dictionary["last_name"] as? String
+        avatar = dictionary["ico"] as? String
+    }
+    var id: Int!
+    var username: String!
     var firstName: String!
     var lastName: String!
-    var phone: String!
-    var email: String!
+    var avatar: String!
 }
